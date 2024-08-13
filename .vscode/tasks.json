@@ -1,0 +1,47 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "Server Clang build",
+			"command": "C:\\msys64\\mingw64\\bin\\clang++.exe",
+			"args": [
+				"${workspaceFolder}\\server\\server.cpp",
+				"-o",
+				"${workspaceFolder}\\server\\server.exe",
+				"-Wall",
+				"-g",
+				"-I${workspaceFolder}\\include\\",
+				"-lws2_32"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"group": {
+				"kind": "build",
+			},
+			"detail": "compiler: C:\\msys64\\mingw64\\bin\\clang++.exe"
+		},
+		{
+			"type": "cppbuild",
+			"label": "Client Clang build",
+			"command": "C:\\msys64\\mingw64\\bin\\clang++.exe",
+			"args": [
+				"${workspaceFolder}\\client\\client.cpp",
+				"-o",
+				"${workspaceFolder}\\client\\client.exe",
+				"-Wall",
+				"-g",
+				"-I${workspaceFolder}\\include\\",
+				"-lws2_32"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"group": {
+				"kind": "build",
+			},
+			"detail": "compiler: C:\\msys64\\mingw64\\bin\\clang++.exe"
+		}
+	]
+}
